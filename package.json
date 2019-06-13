@@ -2,15 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "server": "node server.js",
-    "mern-todo-app": "node scripts/index.js",
-    "start": "concurrently \"node server.js\" \"npm start mern-todo-app\"",
-    "build": "node scripts/build.js",
-    "seed": "node scripts/seedDB.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "installDeps": "yarn && cd mern-todo-app && yarn",
+    "start": "node server.js",
     "heroku-postbuild": "cd mern-todo-app && yarn && yarn run build"
   },
   "keywords": [],
