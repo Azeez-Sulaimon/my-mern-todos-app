@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "server": "node server.js",
-    "mern-todo-app": "node scripts/app.js",
-    "start": "concurrently \"node server.js\" \"npm run mern-todo-app\"",
+    "mern-todo-app": "node scripts/index.js",
+    "start": "concurrently \"node server.js\" \"npm start mern-todo-app\"",
     "build": "node scripts/build.js",
     "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.5.15"
