@@ -6,7 +6,7 @@
   "scripts": {
     "server": "node server.js",
     "mern-todo-app": "node scripts/app.js",
-    "start": "concurrently \"nodemon server.js\" \"npm run mern-todo-app\"",
+    "start": "concurrently \"node server.js\" \"npm run mern-todo-app\"",
     "build": "node scripts/build.js",
     "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1",
